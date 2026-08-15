@@ -373,6 +373,13 @@ function Index() {
           position: relative;
           z-index: 1;
         }
+        .project-diagram {
+          width: 100%;
+          height: 100%;
+          max-width: 220px;
+          color: var(--cherry-bright);
+          opacity: 0.9;
+        }
         .project-content { padding: 1.75rem; flex: 1; display: flex; flex-direction: column; }
         .project-status {
           display: inline-flex;
@@ -537,7 +544,7 @@ function Index() {
           <div className="hero-content">
             <div className="badge">
               <span className="badge-dot" />
-              Available for internships
+              Hello, I'm Viniska K S
             </div>
             <h1>
               Viniska K S
@@ -558,16 +565,16 @@ function Index() {
             </div>
             <div className="hero-stats">
               <div className="stat">
+                <span className="stat-value">3rd</span>
+                <span className="stat-label">Year, B.E. Data Science</span>
+              </div>
+              <div className="stat">
                 <span className="stat-value">2+</span>
-                <span className="stat-label">Projects Built</span>
+                <span className="stat-label">Projects Built & Deployed</span>
               </div>
               <div className="stat">
                 <span className="stat-value">7+</span>
-                <span className="stat-label">Certifications</span>
-              </div>
-              <div className="stat">
-                <span className="stat-value">3rd</span>
-                <span className="stat-label">Year B.E. DS</span>
+                <span className="stat-label">Certifications Completed</span>
               </div>
             </div>
           </div>
@@ -588,7 +595,7 @@ function Index() {
       <section id="about">
         <div className="section-header">
           <p className="section-label">01 / About</p>
-          <h2>Engineering reliability into every pipeline.</h2>
+          <h2>Making data and software pipelines strong, scalable, and failure-proof.</h2>
           <p className="section-desc">A disciplined approach to data: intentional design, anticipated failure points, and datasets that arrive exactly as they should.</p>
         </div>
         <div className="about-grid">
@@ -708,7 +715,18 @@ function Index() {
         <div className="projects-grid">
           <article className="project-card">
             <div className="project-image">
-              <span className="project-number">01</span>
+              <svg className="project-diagram" viewBox="0 0 200 100" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="10" y="35" width="40" height="30" rx="4" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="30" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="8" fontFamily="JetBrains Mono, monospace">SRC</text>
+                <line x1="55" y1="50" x2="75" y2="50" stroke="#dc143c" strokeWidth="1.5" />
+                <polygon points="75,50 70,47 70,53" fill="#dc143c" />
+                <rect x="80" y="30" width="40" height="40" rx="3" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="100" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="7" fontFamily="JetBrains Mono, monospace">ETL</text>
+                <line x1="125" y1="50" x2="145" y2="50" stroke="#dc143c" strokeWidth="1.5" />
+                <polygon points="145,50 140,47 140,53" fill="#dc143c" />
+                <rect x="150" y="35" width="40" height="30" rx="4" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="170" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="8" fontFamily="JetBrains Mono, monospace">DWH</text>
+              </svg>
             </div>
             <div className="project-content">
               <span className="project-status"><span className="badge-dot" />Live</span>
@@ -730,7 +748,18 @@ function Index() {
           </article>
           <article className="project-card">
             <div className="project-image">
-              <span className="project-number">02</span>
+              <svg className="project-diagram" viewBox="0 0 200 100" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="10" y="35" width="40" height="30" rx="4" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="30" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="8" fontFamily="JetBrains Mono, monospace">SRC</text>
+                <line x1="55" y1="50" x2="75" y2="50" stroke="#dc143c" strokeWidth="1.5" />
+                <polygon points="75,50 70,47 70,53" fill="#dc143c" />
+                <rect x="80" y="30" width="40" height="40" rx="3" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="100" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="7" fontFamily="JetBrains Mono, monospace">ETL</text>
+                <line x1="125" y1="50" x2="145" y2="50" stroke="#dc143c" strokeWidth="1.5" />
+                <polygon points="145,50 140,47 140,53" fill="#dc143c" />
+                <rect x="150" y="35" width="40" height="30" rx="4" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="170" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="8" fontFamily="JetBrains Mono, monospace">DWH</text>
+              </svg>
             </div>
             <div className="project-content">
               <span className="project-status coming-soon"><span className="badge-dot" />Coming Soon</span>
@@ -746,7 +775,18 @@ function Index() {
           </article>
           <article className="project-card">
             <div className="project-image">
-              <span className="project-number">03</span>
+              <svg className="project-diagram" viewBox="0 0 200 100" fill="none" stroke="currentColor" strokeWidth="2">
+                <rect x="10" y="35" width="40" height="30" rx="4" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="30" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="8" fontFamily="JetBrains Mono, monospace">SRC</text>
+                <line x1="55" y1="50" x2="75" y2="50" stroke="#dc143c" strokeWidth="1.5" />
+                <polygon points="75,50 70,47 70,53" fill="#dc143c" />
+                <rect x="80" y="30" width="40" height="40" rx="3" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="100" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="7" fontFamily="JetBrains Mono, monospace">ETL</text>
+                <line x1="125" y1="50" x2="145" y2="50" stroke="#dc143c" strokeWidth="1.5" />
+                <polygon points="145,50 140,47 140,53" fill="#dc143c" />
+                <rect x="150" y="35" width="40" height="30" rx="4" stroke="#dc143c" fill="rgba(220,20,60,0.08)" />
+                <text x="170" y="55" textAnchor="middle" fill="#a0a0a0" fontSize="8" fontFamily="JetBrains Mono, monospace">DWH</text>
+              </svg>
             </div>
             <div className="project-content">
               <span className="project-status in-progress"><span className="badge-dot" />In Progress</span>
@@ -773,18 +813,18 @@ function Index() {
         <div className="timeline">
           <div className="timeline-item">
             <h3>B.E. in Data Science</h3>
-            <span className="timeline-meta">2022 — Present</span>
-            <p>3rd year undergraduate under VTU curriculum. Coursework includes Database Management Systems, Computer Networks, and data-focused programming.</p>
-          </div>
-          <div className="timeline-item">
-            <h3>Independent Data Engineering Projects</h3>
-            <span className="timeline-meta">2024 — Present</span>
-            <p>Designed and deployed ETL pipelines, cloud data warehouses, and real-time dashboards using Python, SQL, AWS, Spark, Kafka, Airflow, and dbt.</p>
+            <span className="timeline-meta">2024— Present</span>
+            <p>1st year UG under VTU curriculum. Coursework focuses on introductory data-focused programming in languages like Python, fundamental data structures, and foundational mathematics for computing.</p>
           </div>
           <div className="timeline-item">
             <h3>Certifications & Continuous Learning</h3>
-            <span className="timeline-meta">Ongoing</span>
+            <span className="timeline-meta">2025 — Present</span>
             <p>7+ certifications completed in data engineering, cloud, and analytics tooling. Always expanding the toolkit through hands-on practice.</p>
+          </div>
+          <div className="timeline-item">
+            <h3>Independent Data Engineering Projects</h3>
+            <span className="timeline-meta">Ongoing</span>
+            <p>Actively engineering data infrastructure by designing and deploying robust ETL pipelines, cloud data warehouses, and real-time dashboards utilizing Python, SQL, AWS, Spark, Kafka, Airflow, and dbt.</p>
           </div>
         </div>
       </section>
@@ -851,7 +891,7 @@ function Index() {
       </section>
 
       <footer className="portfolio-footer">
-        <p>Built with precision by <a href="https://github.com/viniska13/" target="_blank" rel="noopener">Viniska K S</a>. Deploy on GitHub Pages.</p>
+        <p>Engineered with precision by <a href="https://github.com/viniska13/" target="_blank" rel="noopener">Viniska K S</a> · Where data meets reliability.</p>
       </footer>
     </div>
   );
