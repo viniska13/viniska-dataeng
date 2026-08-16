@@ -1,4 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
+import profileAsset from "@/assets/profile.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -229,6 +230,13 @@ function Index() {
           padding: 6px;
           background: linear-gradient(135deg, var(--cherry-bright), #4a0d1a);
           box-shadow: 0 0 60px rgba(220, 20, 60, 0.2);
+        }
+        .photo-frame img {
+          width: 100%;
+          height: 100%;
+          border-radius: 50%;
+          object-fit: contain;
+          background: var(--surface-2);
         }
         .photo-placeholder {
           width: 100%;
@@ -569,13 +577,7 @@ function Index() {
           </div>
           <div className="hero-photo">
             <div className="photo-frame">
-              <div className="photo-placeholder">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
-                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                  <circle cx="12" cy="7" r="4" />
-                </svg>
-                <span>Your photo here<br /><small style={{ fontSize: "0.75rem", opacity: 0.7 }}>Replace src in the HTML</small></span>
-              </div>
+              <img src={profileAsset.url} alt="Viniska K S" />
             </div>
           </div>
         </div>
