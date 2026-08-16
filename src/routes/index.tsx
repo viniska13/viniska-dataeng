@@ -181,17 +181,15 @@ function Index() {
           margin-bottom: 1.25rem;
           letter-spacing: -0.03em;
         }
+        .hero-title {
+          font-size: clamp(3.2rem, 7.5vw, 5.8rem);
+          margin-bottom: 2.5rem;
+        }
         .gradient-text {
           background: linear-gradient(135deg, #ffffff 0%, var(--cherry-bright) 100%);
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
-        }
-        .hero-subtitle {
-          font-size: 1.2rem;
-          color: var(--text-muted);
-          max-width: 560px;
-          margin-bottom: 2.5rem;
         }
         .hero-buttons { display: flex; gap: 1rem; flex-wrap: wrap; }
         .btn {
@@ -542,18 +540,9 @@ function Index() {
       <section className="hero" id="home">
         <div className="hero-inner">
           <div className="hero-content">
-            <div className="badge">
-              <span className="badge-dot" />
-              Hello, I'm Viniska K S
-            </div>
-            <h1>
-              Viniska K S
-              <br />
-              <span className="gradient-text">Data Science Student</span>
+            <h1 className="hero-title">
+              Hello, I'm <span className="gradient-text">Viniska K S</span>
             </h1>
-            <p className="hero-subtitle">
-              Aspiring Data Engineer designing pipelines that transform raw, disconnected information into reliable systems built for scale, clarity, and precision.
-            </p>
             <div className="hero-buttons">
               <a href="#projects" className="btn btn-primary">
                 View Projects
@@ -851,7 +840,7 @@ function Index() {
                   <span className="contact-link-value">viniss.engg@gmail.com</span>
                 </span>
               </a>
-              <a href="https://www.linkedin.com/in/viniska-k-s-856627389" target="_blank" rel="noopener" className="contact-link">
+              <a href="https://www.linkedin.com/in/viniska-k-s-856627389/" target="_blank" rel="noopener" className="contact-link">
                 <span className="contact-icon">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                     <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
